@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+    font-family: 'Quantico', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    background-color: rgba(144, 200, 204, 0.521);
+    flex-flow: row wrap;
+    align-items: space-around;
+    padding: 20px;
+    position:sticky;
+    
+    
+}
+
+header h1{
+    align-content: center;
+    color: rgb(51, 15, 24);
+}
+
+header nav {
+    display: flex;
+    
+}
+
+header nav a{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding:10px;
+    width: 100px;
+    margin: 10px ;
+    background-color: rgb(250, 250, 250);
+    text-decoration: none;
+    color: rgba(236, 88, 125, 0.959);
+}
+
+header nav a:hover{
+    background-color: rgba(231, 229, 226, 0.753);
+    font-weight: bold;
+}
+
+.flex_div{
+    display: flex;
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content:center;
+    font-size: 2em;
+}
+
+.img_div{
+    position: relative;
+}
+
+.img_div p{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
+}
+
+.capitais{
+    display: flex;
+    background-color: antiquewhite;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    padding: 50px;
+}
+
+.capitais > div{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px 40px;
+}
+
+.capitais div div{
+    display: inline-block;
+}
+
+.capitais img{
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child{
+    width: 150px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    margin: 10px;
+  }
+  
+  .circle:hover{
+    visibility: hidden;
+  }
+  
+  .clipped-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .clipped-image img{
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    z-index: 1;
+  }
+
+
+
+footer{
+    text-align: center;
+}
+
+
+

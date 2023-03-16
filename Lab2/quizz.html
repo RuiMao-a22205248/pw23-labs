@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="author" content="Rui Mao">
+    <meta name="description" content="Website sobre Shenzhen da China">
+    <meta name="keywords" content="palavras chave">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>A minha página</title>
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+
+        
+                 <h1>S H E N Z H E N</h1>
+            
+                <figure>
+            <img src="images/Shenzhen.png" alt="Shenzhen" width="300" class="main_img">
+            <figcaption>Fig.1 - Shenzhen</figcaption>
+
+            <details>
+                <summary>Info</summary>
+                <p>Photo via Google</p>
+            </details>
+
+        </figure>
+        <br>
+           
+       
+        
+
+    </header>
+
+    <main>
+
+        <section>
+            <nav id="menu">
+                <p>
+                    <b><a href="index.html" >🏠Home</a></b>
+                    <a href="local.html">🗺️Localização</a>
+                    <a href="multimedia.html">🎬Multimedia</a>
+                    <a href="info.html"> ℹ️ Informação</a>
+                    <a href="quizz.html" target="_blank">🔠Quizz</a>
+                    <a href="html5-css.html">💥HTML5 & CSS</a>
+                </p>
+            </nav>
+       </section>
+
+        <section>
+            <h3>Quizz</h3>
+            <p>Nesta página será feito um quizz para testar se o utilizador conhece bem a cidade que a página apresenta.
+            </p>
+            <br>
+        </section>
+
+        <form method="post" action="mailto: maorui020516@gmail.com" enctype="multipart/form-data" autocomplete="on">
+            <fieldset class="quiz">
+                <legend>Shenzhen QUIZZ </legend>
+                <fieldset id="quiz1">
+                    <legend>Info</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required="required" autofocus>
+                    <label for="aplido">Aplido:</label>
+                    <input type="text" id="aplido" name="aplido" required="required">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required="required" size="35">
+                </fieldset>
+
+                <fieldset id="quiz2">
+
+                    <legend>Perguntas</legend>
+                    <label for="P1">P1. Em que país se encontra Shenzhen?</label>
+                    <input type="text" id="Pais" name="Pais" autocomplete="off" required="required" maxlength="15">
+
+                    <label for="P2">P2. A que tipo de cidade pertence Shenzhen?</label>
+                    <label>
+                        <input type="radio" id="emergente" name="historica" value="historica">
+                        Cidade Emergente
+                    </label>
+                    <label for="historica">
+                        <input type="radio" id="historica" name="historica" value="historica">
+                        Cidade Histórica
+                    </label><br>
+
+                    <label for="P3">P3. Quais são as características da cidade?</label>
+                    <input type="checkbox" id="c1" name="Moderna" value="Moderna">
+                    <label for="Moderna"> Modernização</label>
+                    <input type="checkbox" id="c2" name="Tecnologia" value="Tecnologia">
+                    <label for="Tecnologia"> Tecnologia</label>
+                    <input type="checkbox" id="c3" name="Envelhecimento" value="Envelhecimento">
+                    <label for="Envelhecimento"> Envelhecimento</label><br>
+
+                    <label for="P4">P4. A date da reforma e abertura: </label>
+                    <input type="date" id="abertura" name="abertura" required="required">
+
+                    <label for="P5">P5. Que cor pensa que Shenzhen deve representar? </label>
+                    <input type="color" value="#000000" id="color" name="color" >
+
+                    <label for="P6">P6. Qual é a Província de Shenzhen? </label>
+                    <select name="provincia" id="provincia" required="required">
+                        <option value="nada"></option>
+                        <option value="GuangDong">GuangDong</option>
+                        <option value="HeNan">HeNan</option>
+                        <option value="ShanDong">ShanDong</option>
+                        <option value="GuangXi">GuangXi</option>
+                    </select><br>
+
+                    <label for="P7">P7. Quem é prefeito actual de Shenzhen</label>
+                    <input list="prefeitos" name="prefeito" id="prefeito" required="required">
+                    <datalist id="prefeitos">
+                        <option value="Mao ZeDong">
+                        <option value="Xi JingPing">
+                        <option value="Chen RuGui">
+                        <option value="Jiang ZeMin">
+                    </datalist>
+
+                    <label for="P8">P8. Área total é (km²): </label>
+                    <input type="number" id="area" name="area"  required="required" autocomplete="off"  placeholder="1-10000" min="1000" max="100000">
+
+                    <label for="P9">P9. Quanto gosta de Shenzhen</label>
+                    <input type="range" min="0" max="100" 
+                        name="taxa" value="0" oninput="taxaN.value = parseInt(taxa.value)">
+                    <output name="taxaN" for="taxa">0</output> %
+
+                    <p><label for="P10">P10. Deixa um comentário :</label></p>
+                    <textarea id="comment" name="comment" rows="4" cols="50" >
+
+                    </textarea><br>
+
+                    <input type="reset" value="Reset">
+                </fieldset>
+                
+            
+               <label>Click here for submit </label>
+                <input type="image" src="images/submit.png" alt="submit" width="60" height="40"/>
+                
+                
+                
+                
+            </fieldset>
+        </form>
+
+
+
+
+
+
+    </main>
+
+    <footer>Rui Mao - a22205248 - Universidade Lusófona - 2023</footer>
+
+
+
+</body>
+
+</html>

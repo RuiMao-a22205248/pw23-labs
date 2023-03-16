@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: 'Tilt Neon', cursive;
+  
+}
+
+body {
+  
+  margin: 0;
+  
+  font-size: 17px;
+}
+
+ul {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #3333338c;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  background-color: #11111189;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background: #ddd;
+  color: rgb(0, 0, 0);
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #00000085;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+h1 {
+    transform: translateY(300px);
+    animation: slideUp .8s ease forwards .4s;
+}
+
+p{
+  
+  transform: translateY(300px);
+  animation: slideUp .8s ease forwards .8s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+</style>
+</head>
+<body>
+
+ 
+ 
+
+<video autoplay muted loop id="myVideo">
+  <source src="img/Shenzhen_view.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div>
+  <ul>
+ <li><a class="active" href="index.html">Home</a></li>
+ 
+</ul>
+</div>
+
+<div class="content">
+  <h1>About Shenzhen</h1>
+  <p>Shenzhen is a global center in technology, research, manufacturing, business and economics, finance, tourism and transportation,
+    <br> and the Port of Shenzhen is the world's fourth busiest container port.</p>
+  <button id="myBtn" onclick="myFunction()">Pause Video</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause Video";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play Video";
+  }
+}
+</script>
+
+</body>
+</html>

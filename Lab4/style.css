@@ -1,0 +1,161 @@
+*{
+    font-family: 'Tilt Neon', cursive;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('img/shenzhen.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333; 
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgba(234, 110, 184, 0.751);
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgba(195, 104, 234, 0.358);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+.hero {
+    
+    width: 100vw;
+    height: 100vh;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+   
+}
+
+.hero h1 {
+    
+    font-size: 5em;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    
+    display: block;
+    width: 200px;
+    
+    padding: 0.5em;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    color: rgb(187, 192, 141);
+    text-decoration: none;
+    font-size: 1.5em;
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    background-color: rgba(165, 128, 238, 0);
+    
+    transition: 0.3s;
+    
+    border: 2px solid rgb(161, 105, 235);
+    border-radius: 20px;
+}
+
+.hero .btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hero .btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hero .btn:hover span {
+  padding-right: 25px;
+}
+
+.hero .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.hero a:hover{
+     opacity: 1;
+     background-color: rgb(158, 113, 248);
+}
+
+footer{
+    
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    
+    color: #eee;
+    
+}

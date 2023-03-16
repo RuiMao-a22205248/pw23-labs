@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <meta name="author" content="Rui Mao">
+    <meta name="description" content="Website sobre Viajar">
+    <meta name="keywords" content="palavras chave">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title >LAB 3 - A minha página</title>
+    <link rel="icon" href="img/icon.ico" type="image/x-icon" />
+</head>
+
+<style>
+ 
+.container_grid{
+    display: grid;
+    height: 770px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100px 2fr 100px; 
+
+    grid-template-areas:'header header header'
+    	                '  menu main right'
+                        'menu footer right ';
+                        
+
+}
+</style>
+
+<body>
+    <div class="container_grid" >
+        <div class="header_grid">
+            <header>
+               
+                <h1>✈️ V I A J A R - G R I D 6 ✈️</h1>
+                
+                    
+                
+            </header>
+        </div>
+
+        <div class="menu_grid">
+            <p><b>⬇️ LAYOUT ⬇️</b> </p>
+            <nav>
+                <a href="grid.html">Grid1</a>
+                <a href="grid1.html">Grid2</a>
+                <a href="grid2.html">Grid3</a>
+                <a href="grid3.html">Grid4</a>
+                <a href="grid4.html">Grid5</a>
+                <a href="grid5.html">Grid6</a>
+                <a href="index.html">Flex Site</a>
+            </nav>
+        </div>
+        
+    
+        
+    
+        <div class="main_grid">
+            <main>
+                <img src="https://source.unsplash.com/random/1920x1080/?Travel landscape" width="100%";>
+            <p>IMG sobre Viajar</p>
+            </main>
+            
+        </div>
+    
+        <div class="right_grid">
+
+            <p><b>🔘 C I D A D E S 🔘</b></p>
+    
+            <div>
+                <div><img src="img/capitais/lisboa.avif"></div>
+                <div><p>Lisboa</p></div>
+            </div>
+            
+            
+
+            <div>
+                <div><img src="img/capitais/praga.avif"></div>
+                <div><p>Praga</p></div>
+            </div>
+    
+            <div>
+                <div><img src="img/capitais/roma.avif"></div>
+                <div><p>Roma</p></div>
+            </div>
+    
+    
+            <div>
+                <div><img src="img/capitais/beijing.avif"></div>
+                <div><p>Beijing</p></div>
+            </div>
+        </div>
+    
+    
+        
+    
+    
+        </div>
+    
+       
+        
+    
+    
+    <div class="footer_grid">
+         <footer>
+            <p>Rui Mao - a22205248 - Universidade Lusófona - 2023</p>
+        </footer>
+
+    </div>
+       
+    </div>
+    
+</body>
+
+</html>
