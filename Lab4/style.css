@@ -1,11 +1,11 @@
 *{
-    font-family: 'Tilt Neon', cursive;
+  font-family: 'Quantico', sans-serif;
 }
 
 body {
     box-sizing: border-box;
     margin: 0;
-    font-family: sans-serif;
+    
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('img/shenzhen.jpg');
     background-size: cover;
@@ -40,7 +40,7 @@ body {
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit;
+    
     margin: 0;
   }
   
@@ -72,6 +72,7 @@ body {
     display: block;
   }
 
+  
 .hero {
     
     width: 100vw;
@@ -91,7 +92,7 @@ body {
 .hero h1 {
     
     font-size: 5em;
-    font-family: 'Permanent Marker', cursive;
+    
     margin-top: 0;
     margin-bottom: 0.5em;
 }
@@ -106,7 +107,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     
-    color: rgb(187, 192, 141);
+    color: rgba(247, 248, 248, 0.678);
     text-decoration: none;
     font-size: 1.5em;
 
@@ -116,7 +117,7 @@ body {
     
     transition: 0.3s;
     
-    border: 2px solid rgb(161, 105, 235);
+    border: 1px solid rgb(161, 105, 235);
     border-radius: 20px;
 }
 
@@ -125,6 +126,7 @@ body {
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  
 }
 
 .hero .btn span:after {
@@ -134,10 +136,12 @@ body {
   top: 0;
   right: -20px;
   transition: 0.5s;
+  font-weight: bold;
 }
 
 .hero .btn:hover span {
   padding-right: 25px;
+  font-weight: bold;
 }
 
 .hero .btn:hover span:after {
@@ -148,6 +152,7 @@ body {
 .hero a:hover{
      opacity: 1;
      background-color: rgb(158, 113, 248);
+     
 }
 
 footer{
