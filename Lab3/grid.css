@@ -156,7 +156,7 @@
 
 }
 
-@media  (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     
 
@@ -170,11 +170,7 @@
         margin: 10% 30%;
     }
 
-    .menu_grid { 
-        grid-area: menu;
-        background-color: antiquewhite;
-        
-    }
+
 
     .menu_grid nav{
         display: flex;
@@ -192,14 +188,14 @@
    
     .container_grid { 
         display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 100px 1fr 50px 1fr 100px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   grid-template-areas: 
     "header"
     "menu"
     "main"
     "right"
     " footer";
-  height: 100vh;
+  height: auto;
    }
   }
