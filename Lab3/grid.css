@@ -142,7 +142,6 @@
     justify-content: center;
     align-items: center;
     
-    
 }
 
 .container_grid{
@@ -164,12 +163,11 @@
     
     .right_grid > div{
         display: flex;
-        border-radius: 20px;
        
-        box-shadow: 5px 5px 15px #888888;
-        width: 100px;
-        height: 90px;
-        margin: 10px 60px;
+       
+        width: 20%;
+        height: 10%;
+        margin: 10% 30%;
     }
 
     .menu_grid { 
@@ -184,7 +182,7 @@
         align-items: center;
         flex-direction:row;
         flex-wrap: wrap;
-        width: 500px;
+        float: right;
     }
 
    
@@ -194,19 +192,14 @@
    
     .container_grid { 
         display: grid;
-        width: 100vw;
-        height: 100vh;
-        
-
-        grid-template-columns: 1fr;
-        grid-template-rows: 1vw 7vw 1fr 7vw 7vw;
-        
-
-      grid-template-areas: 
-      "header"
-      "main"
-      "right"
-      "menu"
-      "footer";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px 1fr 50px 1fr 100px;
+  grid-template-areas: 
+    "header"
+    "menu"
+    "main"
+    "right"
+    " footer";
+  height: 100vh;
    }
   }
