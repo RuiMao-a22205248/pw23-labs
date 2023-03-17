@@ -54,7 +54,7 @@
 
 .menu_grid p{ 
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-style: italic;
     padding-top: 40px;
     color: #469c0cc5;
@@ -85,9 +85,16 @@
     
 }
 
+.right_grid p { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .right_grid b:first-child{
     color: #f05e8a;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     
 }
@@ -122,13 +129,19 @@
 
 .footer_grid { 
     grid-area: footer; 
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #cac9c9;
+    
+    
 }
 
 .footer_grid p{
-    padding-top: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 
@@ -146,60 +159,35 @@
 
 @media  (max-width: 600px) {
 
-    .right_grid{ 
-        grid-area: right; 
-        display: flex;
-        background-color: rgba(222, 245, 226, 0.822);
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: space-around;
-        padding: 80px;
-        
-    }
-    
-    .right_grid p { 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .right_grid b:first-child{
-        color: #f05e8a;
-        font-size: 1em;
-        text-align: center;
-        
-    }
     
     .right_grid > div{
         display: flex;
         border-radius: 20px;
+       
         box-shadow: 5px 5px 15px #888888;
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 90px;
         margin: 10px 60px;
     }
-    
-    .right_grid div div{
-        display: flex;
-       
+
+    .menu_grid { 
+        grid-area: menu;
+        background-color: antiquewhite;
+        
     }
-    
-    .right_grid img{
-        border-radius: 20px 0px 0px 20px;
-        height: 100%;
-    }
-    
-    .right_grid div div:last-child{
-        width: 70px;
-        background-color: aliceblue;
-        padding: 10px;
-        border-radius: 0 20px 20px 0;
-    
+
+    .menu_grid nav{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction:row;
+        flex-wrap: wrap;
+        width: 500px;
     }
+
+   
+   
+    
 
    
     .container_grid { 
@@ -207,7 +195,7 @@
         width: 100vw;
         height: 200vh;
 
-      grid-template-rows:10vh 35vh 90vh 60vh 20vh;  
+      grid-template-rows:0.2fr 0.4fr 2fr 0.8fr 0.1fr;  
       grid-template-columns: auto;
 
       grid-template-areas: 
