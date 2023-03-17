@@ -24,7 +24,8 @@ header h1{
 
 header nav {
     display: flex;
-    
+    flex-direction:row;
+    flex-wrap: wrap;
 }
 
 header nav a{
@@ -141,6 +142,7 @@ header nav a:hover{
 footer{
     text-align: center;
 }
+
 
 
 
