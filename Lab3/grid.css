@@ -160,6 +160,8 @@
 @media  (max-width: 600px) {
 
     
+
+    
     .right_grid > div{
         display: flex;
         border-radius: 20px;
@@ -193,10 +195,12 @@
     .container_grid { 
         display: grid;
         width: 100vw;
-        height: 200vh;
+        height: 100vh;
+        
 
-      grid-template-rows:0.2fr 0.4fr 2fr 0.8fr 0.1fr;  
-      grid-template-columns: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1vw 7vw 1fr 7vw 7vw;
+        
 
       grid-template-areas: 
       "header"
