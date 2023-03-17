@@ -146,9 +146,9 @@
 
 .container_grid{
     display: grid;
-    height: 770px;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 100px 2fr 100px; 
+    height: auto;
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: auto; 
 
     grid-template-areas:'header header header'
     	                'menu main right '
@@ -195,7 +195,7 @@
     "menu"
     "main"
     "right"
-    " footer";
+    "footer";
   height: auto;
    }
   }
