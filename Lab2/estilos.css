@@ -124,6 +124,10 @@ input{
 }
 
 iframe{
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    display: block;
     border: 0;
 }
 
