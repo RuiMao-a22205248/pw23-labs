@@ -1,9 +1,10 @@
 *{
   font-family: 'Quantico', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    box-sizing: border-box;
+    
     margin: 0;
     
 
