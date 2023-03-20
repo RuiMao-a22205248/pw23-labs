@@ -16,20 +16,42 @@
     <title >LAB 4 - Image Map</title>
     <link rel="icon" href="img/shenzhen_logo.png" type="image/x-icon" />
     
+    <style>
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:10%;
+            
+        }
+
+        polygon{
+            opacity: 0;
+        }
+        
+
+        polygon:hover{
+            opacity: 0.2;
+        }
+    </style>
 </head>
 
 <body>
-    <svg width="242" height="232" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <div>
+        <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- os atributos xmlns e xmlns:link são obrigatorios em ficheiros extensão svg, mas embebido no HTML são opcionais -->
         <image href="/Lab4/img/pw-wordcloud.jpg" width="100%" height="100%">
         </image>
-        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=9482">
-            <polygon opacity="0.3" points="75,63 162,63 163,93 75,96" />
+        <a href="/Lab4/index.html">
+            <polygon  points="155,225 155,275 355,275 355,225 " />
         </a>
-        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=9482">
-            <polygon opacity="0.3" points="25,160 195,77 206,95 32,176" />
+        <a href="/Lab4/imagemap.html">
+            <polygon  points="190,278 190,300 320,300 320,278" />
         </a>
     </svg>
+    </div>
+    
 </body>
 
 </html>

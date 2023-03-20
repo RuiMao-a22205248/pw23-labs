@@ -46,14 +46,14 @@ body {
   }
   
   .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: rgba(161, 105, 235, 0.897);
+    background-color: rgba(161, 105, 235, 0.932);
   }
   
   .subnav-content {
     display: none;
     position: absolute;
     left: 0;
-    background-color: rgba(161, 105, 235, 0.856);
+    background-color: rgba(161, 105, 235, 0.973);
     width: 100%;
     z-index: 1;
   }
