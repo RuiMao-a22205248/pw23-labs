@@ -8,62 +8,200 @@
     <meta name="author" content="Rui Mao">
     <meta name="description" content="Portfolio">
     <meta name="keywords" content="palavras chave">
-    
-    <title >RUI MAO</title>
+    <script src="https://kit.fontawesome.com/646b5e7836.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+
+	<title >RUI MAO</title>
     <link rel="icon" href="img/RM.ico" type="image/x-icon" sizes="196x196"/>
 </head>
 
-<script>
-const menuToggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
-
-menuToggle.addEventListener('click', function() {
-  menu.classList.toggle('active'); // 切换active类，以便控制菜单的显示和隐藏
-});
-
-
-</script>
 
 <body>
+	<video id="background-video" autoplay loop muted poster="img/background.jpg">
+		<source src="img/bg2.mp4" type="video/mp4">
+	</video>
 
-  <button id="menu-toggle" >菜单</button>
-<nav id="menu">
-  <ul>
-    <li><a href="#">链接1</a></li>
-    <li><a href="#">链接2</a></li>
-    <li><a href="#">链接3</a></li>
-    <li><a href="#">链接4</a></li>
-  </ul>
-</nav>
+	
+	
 
-  
+	<div class="container1">
+
+		<header>
+			
+		
 
 
-    <nav>
+			
+			<div class="menu">
+				<div class="options">
+				  <div class="option selected">Home</div>
+				  <div class="option">About</div>
+				  <div class="option">Products</div>
+				  <div class="option">Contact</div>
+				</div>
+			  </div>
+			  
+			  <div class="menu-click-area" onclick="document.querySelector('header').classList.toggle('active')">
+				<div class="svg-container">
+					<svg class="x" xmlns="http://www.w3.org/2000/svg" >
+						<g class="top-bars" stroke-width="4">
+							<path class="bar bar1" d="M 178,20 H 202" />
+							<path class="bar bar2" d="M 178,29 H 202" />
+						</g>
+					</svg>
+				</div>
+			</div> 
+			
+			
 
-        <label for="touch"><span>titre</span></label>               
-         <input type="checkbox" id="touch"> 
+			
+		</header>
+	
+		<main>
 
-        <ul class="slide">
-          <li><a href="#">Home</a></li>
-          <li>
-            <a href="#">About Me</a>
-            <ul class="submenu">
-              <li><a href="#">About 1</a></li>
-              <li><a href="#">About 2</a></li>
-              <li><a href="#">About 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About the Website</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+			<div class="content">
+				<div class="sidebar">
+					<img src="img/RM1_B.png" alt="Logo" >
+					<ul>
+						<li data-show="section1"><a href="#section1" class="menu-item">HOME</a></li>
+						<li data-show="section1 section2"><a href="#section2" class="menu-item">ME</a></li>
+						<li data-show="section1 section3"><a href="#section3" class="menu-item">PW</a></li>
+						<li data-show="section1 section4"><a href="#section4" class="menu-item">BLOG</a></li>
+						<li data-show="section1 section5"><a href="#section5" class="menu-item">SITE</a></li>
+						<li data-show="section1 section6"><a href="#section6" class="menu-item">CONTACT</a></li>
+					</ul>
+					<div class="mode-switch">
+						<button id="night-mode" title="NightMode"><i class="fa-solid fa-lightbulb"></i></i></i></button>
+					</div>
+				</div>
+				
+				<section id="section1"><div class="hero">
+					<h3>Hi,here is </h3>
+					<div class="name">
+						
+						<h1>
+							<span>R</span>
+							<span>U</span>
+							<span>I</span>
+							<span> </span>
+							<span> </span>
+							<span> </span>
+							<span>M</span>
+							<span>A</span>
+							<span>O</span>
+						</h1>
+						<p>I am a student of computer engineering at Lusófona university!</p>
+					</div>
+					<div class="description">
+						
+					</div>
+					
+		
+					
+					<div class="down">
+						<a href="#apresentacao" ><i class="fa-solid fa-angles-down fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
+					</div>
+				</div></section>
+				<section id="section2"><article>
+					
+					<h2 id="apresentacao">Apr</h2>
+					
+					<div class="apresentacao">
+						<article>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+		
+							The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+						</p>
+						
+						<p>
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+						</p>
+						</article>
+						
+						</div>
+					
+				</section>
+				<section id="section3">
+					<div class="pw">
+						<h2>PW</h2>
+					</div>
+				</section>
+				<section id="section4">
+					<div class="blog">
+						<h2>BLOG</h2>
+					</div>
+				</section>
+				<section id="section5">
+					<div class="site">
+						<h2>ABOUT THE SITE</h2>
+					</div>
+				</section>
+				<section id="section6">
+					<div class="contact">
+						<h2>Contact</h2>
+						<form method="post" action="mailto: maorui020516@gmail.com" enctype="multipart/form-data" autocomplete="on">      
+							<input name="name" type="text" class="feedback-input" placeholder="Name" />   
+							<input name="email" type="text" class="feedback-input" placeholder="Email" />
+							<textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+							<input type="submit" value="SUBMIT"/>
+						  </form>
+					</div>
+				</section>
+			</div>
+		
+			
+		
+			
+		
+		</main>	
 
-    
 
-    
+			<div class="footer-basic">
+				<footer>
+					<div class="social">
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-github"></i></a>
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="#"><i class="fa-brands fa-weixin"></i></a>
+					</div>
+					<ul class="list-inline">
+						<li><a href="/Lab5/index.html">Home</a></li>
+						<li><a href="#">About ME</a></li>
+						<li><a href="#">Programação Web</a></li>
+						<li><a href="/Lab5/blog.html">Blog</a></li>
+						<li><a href="#">About Site</a></li>
+					</ul>
+					
+					<p class="copyright"> Rui Mao - a22205248 - Universidade Lusófona 2023 - Lisbon Portugal</p>
+					<div id="footer-logo">
+						<img src="img/RM1_B.png" alt="Logo" >
+					</div>
+					
+				</footer>
+			</div>
+		
+
+			
+			
+		
+	</div>
+
+
+
+		
+	
+
+	
+	
+	
+	
+	
+
+	
+
+	<script src="script.js"></script>
 </body>
 
 </html>
