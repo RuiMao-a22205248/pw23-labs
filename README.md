@@ -14,7 +14,11 @@ Lab 3: http://mrui0516.pythonanywhere.com/Lab3/index.html
 
 Lab 4: http://mrui0516.pythonanywhere.com/Lab4/index.html
 
+Lab 5: http://mrui0516.pythonanywhere.com/Lab5/index.html
 
+Lab 6: Exercicios Python 1
+
+Lab 7: Exercicios Python 2
 
 
 ULHT - Rui Mao - a22205248
