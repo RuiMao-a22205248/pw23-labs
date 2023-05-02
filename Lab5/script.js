@@ -12,13 +12,13 @@ nightModeButton.addEventListener('click', function () {
     body.classList.remove('night-mode');
     nightModeButton.innerHTML = '<i class="fa-solid fa-lightbulb"></i></i>';
     video.src = "img/bg2.mp4";
-    body.style.color = '#225b69';;
+    body.style.color = '#ffffffda';;
 
   } else {
     body.classList.add('night-mode');
     nightModeButton.innerHTML = '<i class="fa-regular fa-lightbulb"></i>';
     video.src = "img/bg_b.mp4";
-    body.style.color = '#fff';
+    body.style.color = '#a7a7a7da';
   }
 });
 
@@ -74,6 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
 
 
 

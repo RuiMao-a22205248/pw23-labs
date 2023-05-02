@@ -2,18 +2,18 @@
 	box-sizing: border-box;
 
 	font-family: 'Chakra Petch', sans-serif;
-
+	scroll-behavior: smooth;
 }
 
 
 body {
-	color: #ffffff;
+	color: #ffffffda;
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	width: 100%;
+	width: 100vw;
 	overflow: auto;
-	scroll-snap-type: y mandatory;
+	
 
 }
 
@@ -21,13 +21,14 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: 100vh;
 	width: 7vw;
 	background-color: transparent;
 	padding: 15px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
+	font-size: 13px;
 }
 
 .logo {
@@ -53,7 +54,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+	
 }
 
 .sidebar a {
@@ -64,7 +65,7 @@ body {
 	margin-bottom: 5px;
 
 	border-radius: 5px;
-	background-color: rgba(255, 255, 255, 0);
+	opacity: 0.4;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	text-align: center;
@@ -77,9 +78,9 @@ body {
 .sidebar a:hover,
 .sidebar a.active {
 	background-color: rgba(0, 123, 255, 0.8);
-	color: #cdebf5;
+	color: #ffffff;
 	font-weight: bold;
-
+	opacity: 1;
 }
 
 
@@ -89,6 +90,7 @@ body {
 
 section {
 	height: 100vh;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -214,7 +216,7 @@ main {
 .hero {
 	display: flex;
 	height: 90vh;
-	width: 100%;
+	width: 100vw;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
@@ -235,15 +237,6 @@ main {
 
 span {
 	font-size: 5vw;
-}
-
-article {
-	display: flex;
-	top: calc(100% + 20px);
-	width: 100%;
-	height: 100vh;
-
-	background-color: aquamarine;
 }
 
 
@@ -324,12 +317,6 @@ main h3 {
 
 }
 
-.download-cv {
-	display: flex;
-	justify-items: center;
-	padding: 5vw;
-	margin: auto;
-}
 
 
 .down {
@@ -337,51 +324,254 @@ main h3 {
 	justify-content: center;
 	align-items: end;
 	position: relative;
-	bottom: 3vh;
+	bottom: 0vh;
 
 }
 
 
 
 .apresentacao {
-	background-color: wheat;
-	text-align: center;
-	text-align: justify;
+	
+	width: 100vw;
+	height: 100vh;
+	
 }
+.apresentacao h1{
+	font-size: 2vw;
+	
+}
+
+  
+  .apresentacao article {
+	padding: 2rem;
+	background-color: rgba(22, 140, 250, 0.582);
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 0;
+  }
+  
+  .apresentacao p {
+	font-size: 20px;
+	padding-bottom: 20px;
+	padding-left: 12%;
+	padding-right: 12%;
+	width: 100%;
+	height: 65%;
+  }
+
+ 
+  .apresentacao .down {
+	
+	bottom: 5vh;
+
+}
+
+  button {
+	font-size: 18px;
+	color: #ffffffab;
+	font-family: inherit;
+	font-weight: 800;
+	cursor: pointer;
+	position: relative;
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+	color: #fff;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+	width: 100%;
+	left: 0%;
+  }
+  
+  button:after {
+	content: "";
+	pointer-events: none;
+	bottom: -2px;
+	left: 50%;
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: #fff;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: width, left;
+  }
+
+  
 
 .pw {
 	height: 100%;
 	width: 100%;
-	background-color: wheat;
-	text-align: center;
-	text-align: justify;
+	background-color: rgb(147, 214, 223);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.pw h1{
+	font-size: 30px;
+	
+}
+
+.pw p{
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 12%;
+	padding-right: 12%;
+	width: 100%;
+	height: 50%;
+}
+
+.pw .down{
+	padding-top: 100px;
+}
+
+.project {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(147, 199, 223);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.project h1{
+	font-size: 30px;
+	
+}
+
+.project p{
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 12%;
+	padding-right: 12%;
+	width: 100%;
+	height: 60%;
+}
+
+.project .down{
+	padding-top: 100px;
 }
 
 .blog {
-	height: 100%;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(147, 223, 219);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.blog h1{
+	font-size: 30px;
+	
+}
+
+.blog p{
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 12%;
+	padding-right: 12%;
 	width: 100%;
-	background-color: rgb(52, 150, 76);
-	text-align: center;
-	text-align: justify;
+	height: 60%;
+}
+
+.blog .down{
+	padding-top: 100px;
 }
 
 .site {
-	height: 100%;
-	width: 100%;
-	background-color: rgb(59, 70, 119);
-	text-align: center;
-	text-align: justify;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(161, 147, 223);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
+
+.site h1{
+	font-size: 30px;
+	
+}
+
+.site p{
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 12%;
+	padding-right: 12%;
+	width: 100%;
+	height: 60%;
+}
+
+.site .down{
+	padding-top: 100px;
+}
+
+.tool {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(193, 147, 223);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.tool h1{
+	font-size: 30px;
+	
+}
+
+.tool p{
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 12%;
+	padding-right: 12%;
+	width: 100%;
+	height: 60%;
+}
+
+.tool .down{
+	padding-top: 100px;
+}
+
 
 .contact {
 	height: 100%;
 	width: 100%;
-	background-color: #f7eaf5;
-	text-align: center;
-	text-align: justify;
+	background-color: #d48693b4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .contact h2{
+	font-size: 30px;
 	text-align: center;
 }
 
@@ -389,13 +579,13 @@ form { max-width:50%; margin:100px auto; height: 50%;}
 
 .feedback-input {
   color:white;
-  font-family: Helvetica, Arial, sans-serif;
+ 
   font-weight:500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #CC6666;
+  border:2px solid #0000005d;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -413,9 +603,9 @@ textarea {
 }
 
 [type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  
   width: 100%;
-  background:#CC6666;
+  background:#cc666683;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -427,7 +617,7 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#CC4949; }
+[type="submit"]:hover { background:#da4d4d; }
 
 
 
