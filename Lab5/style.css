@@ -3,6 +3,8 @@
 
 	font-family: 'Chakra Petch', sans-serif;
 	scroll-behavior: smooth;
+	
+  
 }
 
 
@@ -12,8 +14,8 @@ body {
 	padding: 0;
 	height: 100%;
 	width: 100vw;
-	overflow: auto;
 	
+	overflow: hidden;
 
 }
 
@@ -563,7 +565,7 @@ main h3 {
 .contact {
 	height: 100%;
 	width: 100%;
-	background-color: #d48693b4;
+	background-color: #ffeeeeb4;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -573,6 +575,7 @@ main h3 {
 .contact h2{
 	font-size: 30px;
 	text-align: center;
+	color: #4b4c4d;
 }
 
 form { max-width:50%; margin:100px auto; height: 50%;}
@@ -625,9 +628,10 @@ textarea {
 	display: flex;
 	justify-content: center;
 	padding: 40px 0 20px 0;
-	background-color: #fdfdfd;
+	background-color: #ffeeee8c;
 	color: #4b4c4d;
 	margin-top: auto;
+	width: 100%;
 }
 
 .footer-basic ul {

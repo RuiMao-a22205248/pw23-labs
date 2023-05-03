@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href=".css">
+    <meta name="author" content="Rui Mao">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="palavras chave">
+    <script src="https://kit.fontawesome.com/646b5e7836.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+
+	<title >RUI MAO</title>
+    <link rel="icon" href="img/RM.ico" type="image/x-icon" sizes="196x196"/>
+</head>
+
+<style>
+
+* {
+	box-sizing: border-box;
+	font-family: 'Chakra Petch', sans-serif;
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    overflow: auto;
+}
+
+header {
+	background-color: #f1f1f1;
+	color: #000000;
+	padding: 20px;
+    width: 100%;
+    
+}
+
+header h1 {
+	margin: 0;
+    text-align: center;
+}
+    nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+  
+}
+
+nav a {
+	color: #000000;
+	text-decoration: none;
+}
+nav li :hover{
+    
+	border-bottom: solid ;
+    color: #000000;
+}
+
+#calculator-page {
+    background-color: rgb(255, 255, 187);
+    
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#calculator-page h1{
+    
+    color: #000000;
+}
+
+.calculator {
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    width: 350px;
+    max-height: 600px;
+}
+
+#screen {
+    max-width: 100%;
+    margin-top: 15px;
+    margin-left: 17px;
+    margin-right: 17px;
+    height: 70px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+#calculator-buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 15px;
+}
+
+#calculator-buttons button {
+    max-width: 300px;
+    min-width: 60px;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 2px;
+    background-color: gray;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+   
+}
+
+#calculator-buttons button:hover {
+    background-color: gray;
+    color: beige;
+    border-style: solid ;
+}
+
+#screen {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 40px;
+    font-weight:500;
+    padding: 10px;
+}
+
+#photo {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-image: url('https://source.unsplash.com/random/1920x1080/?tec');
+        background-size: cover;
+        background-position: center;
+      }
+      #text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        color: #fff;
+      }
+
+      .img_txt{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: antiquewhite;
+      }
+
+      .img_txt input{
+        margin: 30px;
+      }
+
+
+      .text {
+        position: absolute;
+        font-size: 36px;
+        color: #000;
+      }
+
+      .random-name{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(216, 250, 215);
+      }
+
+      .random-name input{
+        margin: 30px;
+      }
+
+      .footer-basic {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0 20px 0;
+	background-color: #ffeeee8c;
+	color: #4b4c4d;
+	margin-top: auto;
+	width: 100%;
+}
+
+.footer-basic ul {
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+.footer-basic li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.footer-basic ul a {
+	color: inherit;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+	opacity: 1;
+}
+
+.footer-basic .social {
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+	font-size: 24px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	margin: 0 8px;
+	color: inherit;
+	opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+	opacity: 0.9;
+}
+
+.footer-basic .copyright {
+
+	margin-top: 15px;
+	text-align: center;
+	font-size: 13px;
+	color: #aaa;
+	margin-bottom: 0;
+}
+
+#footer-logo {
+	display: flex;
+	justify-content: center;
+
+	padding: 10px;
+	height: 3vh;
+
+}
+
+#footer-logo img {
+
+	height: 2vh;
+
+}
+
+
+#datetime{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav li{
+	border-bottom: solid 2PX;
+}
+}
+</style>
+
+
+
+<body>
+    <header>
+		<h1>Tools</h1>
+		<nav>
+			<ul>
+				<li><a href="/Lab5/index.html"> < BACK</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <div id="calculator-page">
+            <h1>Calculator</h1>
+            <div class="calculator">
+                
+                <div id="screen"></div>
+    
+                <div id="calculator-buttons">
+                    <button data-action="clear">C</button>
+                    <button data-action="divide"><i data-action="divide" class="fa-solid fa-divide"></i></button>
+                    <button>(</button>
+                    <button>)</button>
+        
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button data-action="multiply"><i data-action="multiply" class="fa-solid fa-xmark"></i></button>
+        
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button data-action="subtract"><i data-action="subtract" class="fa-solid fa-minus"></i></button>
+        
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button data-action="add"><i data-action="add" class="fa-solid fa-plus"></i></button>
+                    
+                    <button>0</button>
+                    <button data-action="decimal">.</button>
+                    <button data-action="calculate"><i data-action="calculate" class="fa-solid fa-equals"></i></button>
+        
+                </div>
+            </div>
+        </div>
+
+ <div class="img_txt">
+    <h1>Image insert text</h1>
+    <div id="photo"></div>
+    <label>What u think about img:<input type="text" id="input-text">
+        <button onclick="addText()">Add to Img</button>   
+        <button onclick="clearText()">Clear</button></label>
+    
+ </div>
+    
+ <div class="random-name">
+    <h1>Random name placement</h1>
+    <label>
+        Write name: 
+        <input type="text" id="input-txt">
+        <button onclick="addText()">Put</button>
+        <button onclick="clearText()">Clear</button>
+    </label>
+    
+ </div>
+          
+
+
+    </main>
+
+    
+
+    <div class="footer-basic">
+        <footer>
+            <div id="datetime"></div>
+            <div class="social">
+                
+                <a href="https://github.com/RuiMao-a22205248" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rui-mao-7b6b81231/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a onclick="alert('My Whatsapp Number : 920303435')"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/_mr.rui_/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li><a href="/Lab5/index.html">Home</a></li>
+                <li><a href="/Lab5/me.html">About ME</a></li>
+                <li><a href="/Lab5/pw.html">Programação Web</a></li>
+                <li><a href="/Lab5/blog.html">Blog</a></li>
+                <li><a href="/Lab5/tool.html">Tools</a></li>
+                <li><a href="/Lab5/site.html">About Site</a></li>
+            </ul>
+            <p class="copyright"> 📍Lisbon -Portugal</p>
+            <p class="copyright"> Rui Mao - a22205248 - Universidade Lusófona 2023</p>
+            <div id="footer-logo">
+                <img src="img/RM1_B.png" alt="Logo" >
+            </div>
+            
+        </footer>
+    </div>
+</body>
+
+
+<script>
+
+    const calculator = document.querySelector('.calculator')
+    const keys = calculator.querySelector('#calculator-buttons')
+    const screen = document.getElementById('screen');
+    
+    keys.addEventListener('click', e => {
+     if (e.target.matches('button, i')) {
+        const key = e.target
+        const action = key.dataset.action
+    
+        if (!action) {
+            screen.innerHTML += key.innerHTML;
+        }
+    
+        if (
+            action === 'add' ||
+            action === 'subtract' ||
+            action === 'multiply' ||
+            action === 'divide' ||
+            action === 'sqrt' ||
+            action === 'percent'
+          ) {
+            switch(action) {
+                case 'add':
+                    screen.innerHTML += "+";
+                    break;
+                case 'subtract':
+                    screen.innerHTML += "-";
+                    break;
+                case 'multiply':
+                    screen.innerHTML += "*";
+                    break;
+                case 'divide':
+                    screen.innerHTML += "/";
+                    break;
+            }
+        }
+    
+        if (action === 'decimal') {
+            screen.innerHTML += "."
+        }
+          
+        if (action === 'clear') {
+            screen.innerHTML = "";
+        }
+          
+        if (action === 'calculate') {
+            screen.innerHTML = eval(screen.innerHTML);
+        }
+    
+        if(screen.innerHTML.length > 10 || screen.innerHTML === "undefined") {
+            screen.innerHTML = "";
+        }
+     }
+    });
+
+    function addText() {
+        var text = document.getElementById('input-text').value;
+        var photo = document.getElementById('photo');
+        var textElement = document.createElement('div');
+        textElement.id = 'text';
+        textElement.innerText = text;
+        photo.appendChild(textElement);
+      }
+
+      function clearText() {
+        var photo = document.getElementById('photo');
+        var textElement = document.getElementById('text');
+        if (textElement) {
+          photo.removeChild(textElement);
+        }
+      }
+
+
+      function addText() {
+        var text = document.getElementById('input-txt').value;
+        var container = document.body;
+        var containerRect = container.getBoundingClientRect();
+        var width = containerRect.width;
+        var height = containerRect.height;
+        var textElement1 = createTextElement(text);
+        var textElement2 = createTextElement(text);
+        var textElement3 = createTextElement(text);
+        setRandomPosition(textElement1, width, height);
+        setRandomPosition(textElement2, width, height);
+        setRandomPosition(textElement3, width, height);
+        container.appendChild(textElement1);
+        container.appendChild(textElement2);
+        container.appendChild(textElement3);
+      }
+
+      function clearText() {
+        var texts = document.querySelectorAll('.text');
+        for (var i = 0; i < texts.length; i++) {
+          texts[i].parentNode.removeChild(texts[i]);
+        }
+      }
+
+      function createTextElement(text) {
+        var textElement = document.createElement('div');
+        textElement.classList.add('text');
+        textElement.innerText = text;
+        return textElement;
+      }
+
+      function setRandomPosition(element, maxWidth, maxHeight) {
+        var left = Math.random() * maxWidth;
+        var top = Math.random() * maxHeight;
+        element.style.left = left + 'px';
+        element.style.top = top + 'px';
+      }
+    
+      var months = ['January', 'February', 'March', 'April', 'May', 'June',
+                    'July', 'August', 'September', 'October', 'November', 'December'];
+
+      function getCurrentDateTime() {
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = months[date.getMonth()];
+        var day = date.getDate();
+        var hours = ('0' + date.getHours()).slice(-2);
+        var minutes = ('0' + date.getMinutes()).slice(-2);
+        var seconds = ('0' + date.getSeconds()).slice(-2);
+        return  day+' of ' +month+ ', ' + year + ' - ' + hours + ':' + minutes + ':' + seconds;
+      }
+
+      var datetimeElement = document.getElementById('datetime');
+      datetimeElement.innerText = getCurrentDateTime();
+</script>
