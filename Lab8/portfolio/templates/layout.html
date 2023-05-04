@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Rui Mao">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="palavras chave">
+	<title >RUI MAO</title>
+    <link rel="icon" href="img/RM.ico" type="image/x-icon" sizes="196x196"/>
+</head>
+
+<style>
+    * {
+  padding: 0; 
+  margin: 0;
+  box-sizing:border-box;
+  font-family: sans-serif;
+}
+
+header {
+  height: 10vh; 
+  background: purple;
+  color: white;
+  top: 0;  
+  
+  /* alinhando logo e menu */
+  display:flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+header div {
+  font-size: 2em;  
+  padding: 1em;
+}
+
+header nav {
+  display:flex;
+  justify-content: flex-end;  
+}
+
+
+nav a {
+  padding: 0 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  color: lightgray;
+}
+
+
+main {
+  height: 85vh;
+  background-color:grey;
+  padding: 4em 4em;
+}
+
+footer {
+  height:5vh;
+  display:flex;
+  justify-content: flex-end;
+  padding: 0 2vw;
+  align-items: center;
+}
+
+</style>
+
+<body>
+    <header>
+      <div>Rui Mao</div>
+      <nav>
+        <a href="{% url 'portfolio:home' %}">home</a>      
+        <a href="">products</a>      
+        <a href="">about</a>      
+        <a href="">contact</a>      
+      </nav>
+    </header>
+    
+    <main>
+        {% block main %}
+	    {% endblock main %}
+    </main>
+    
+    <footer>ULusófona, 2023</footer>
+  </body>  

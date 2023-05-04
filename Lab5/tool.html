@@ -334,8 +334,8 @@ nav li :hover{
     <h1>Image insert text</h1>
     <div id="photo"></div>
     <label>What u think about img:<input type="text" id="input-text">
-        <button onclick="addText()">Add to Img</button>   
-        <button onclick="clearText()">Clear</button></label>
+        <button onclick="addTextimg()">Add to Img</button>   
+        <button onclick="clearTextimg()">Clear</button></label>
     
  </div>
     
@@ -358,7 +358,6 @@ nav li :hover{
 
     <div class="footer-basic">
         <footer>
-            <div id="datetime"></div>
             <div class="social">
                 
                 <a href="https://github.com/RuiMao-a22205248" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -369,9 +368,9 @@ nav li :hover{
             <ul class="list-inline">
                 <li><a href="/Lab5/index.html">Home</a></li>
                 <li><a href="/Lab5/me.html">About ME</a></li>
+                <li><a href="/Lab5/project.html">Projects</a></li>
                 <li><a href="/Lab5/pw.html">Programação Web</a></li>
                 <li><a href="/Lab5/blog.html">Blog</a></li>
-                <li><a href="/Lab5/tool.html">Tools</a></li>
                 <li><a href="/Lab5/site.html">About Site</a></li>
             </ul>
             <p class="copyright"> 📍Lisbon -Portugal</p>
@@ -442,7 +441,7 @@ nav li :hover{
      }
     });
 
-    function addText() {
+    function addTextimg() {
         var text = document.getElementById('input-text').value;
         var photo = document.getElementById('photo');
         var textElement = document.createElement('div');
@@ -451,7 +450,7 @@ nav li :hover{
         photo.appendChild(textElement);
       }
 
-      function clearText() {
+      function clearTextimg() {
         var photo = document.getElementById('photo');
         var textElement = document.getElementById('text');
         if (textElement) {
