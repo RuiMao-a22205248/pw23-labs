@@ -379,7 +379,7 @@ article h1{
 
   .apresentacao .down {
 	
-	bottom: 3.5vh;
+	padding-top: 100px;
 
 }
 
@@ -448,7 +448,7 @@ article h1{
 	padding-left: 12%;
 	padding-right: 12%;
 	width: 100%;
-	height: 50%;
+	height: 60%;
 }
 
 .pw .down{
@@ -574,19 +574,26 @@ article h1{
 
 
 .contact {
-	height: 100%;
+	overflow: auto;
+	height: 100vh;
 	width: 100%;
-	background-color: #ffeeeeb4;
+	background-color: #dbc8c8b4;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 
-.contact h2{
+.contact h1{
+	padding-top: 200px;
 	font-size: 30px;
 	text-align: center;
-	color: #4b4c4d;
+	
+}
+
+.contact .up{
+	
+	top: 140px;
 }
 
 form { max-width:50%; margin:100px auto; height: 50%;}
@@ -639,7 +646,7 @@ textarea {
 	display: flex;
 	justify-content: center;
 	padding: 40px 0 20px 0;
-	background-color: #ffeeee8c;
+	background-color: #ebd6d6b4;
 	color: #4b4c4d;
 	margin-top: auto;
 	width: 100%;
@@ -718,12 +725,23 @@ textarea {
 
 
 @media screen and (max-width: 600px) {
+	body{
+		overflow: scroll;
+	}
 	header {
 		top: 0;
 		flex-direction: row;
 		align-items: center;
 		height: 0;
 		padding: 0;
+	}
+
+	.up{
+		padding: 20px;
+	}
+
+	.down{
+		padding: 20px;
 	}
 
 	.menu1 {
@@ -831,7 +849,12 @@ textarea {
 		margin: 8px 0;
 	}
 
-	.option.selected {
+	.option a{
+		color: #ffffffd3;
+		text-decoration:none;
+	}
+
+	.option.selected a{
 		color: #a02f56;
 	}
 
@@ -895,17 +918,25 @@ textarea {
 	}
 
 
-	.hero .down{
-		bottom: 10px;
+	.up,.down{
+		display: none;
 	}
 
 	.apresentacao h1{
-		margin: 20px;
+		
 		font-size: 8vw;
 	}
 
 	.apresentacao p{
 		font-size: 4vw;
+	}
+
+	.apresentacao .up{
+		top:5px;
+	}
+
+	.apresentacao .down{
+		bottom:0px;
 	}
 
 	.project .up{
@@ -919,5 +950,90 @@ textarea {
 	.project p{
 		font-size: 4vw;
 	}
+
+	.pw h1{
+		margin: 20px;
+		font-size: 8vw;
+	}
+
+	.pw p{
+		font-size: 4vw;
+	}
+
+	.pw .up{
+		top: 30px;
+	}
+
+	.pw .down{
+		bottom:20px;
+	}
+
+	
+	.blog h1{
+		margin: 20px;
+		font-size: 8vw;
+	}
+
+	.blog p{
+		font-size: 4vw;
+	}
+
+	.blog .up{
+		top: 30px;
+	}
+
+	.blog .down{
+		bottom:20px;
+	}
+
+	.site h1{
+		margin: 20px;
+		font-size: 8vw;
+	}
+
+	.site p{
+		font-size: 4vw;
+	}
+
+	.site .up{
+		top: 10px;
+	}
+
+	.site .down{
+		bottom:0px;
+	}
+
+	.tool h1{
+		margin: 20px;
+		font-size: 8vw;
+	}
+
+	.tool p{
+		font-size: 4vw;
+	}
+
+	.tool .up{
+		top: 10px;
+	}
+
+	.tool .down{
+		bottom:0px;
+	}
+
+	.contact{
+		overflow: none;
+	}
+
+	.contact h1{
+		margin-top: 20px;
+		font-size: 8vw;
+	}
+
+	.contact .up{
+		top: 240px;
+		padding-bottom: 20px;
+		
+	}
+
 
 }
