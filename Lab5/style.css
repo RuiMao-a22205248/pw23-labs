@@ -213,7 +213,7 @@ main {
 
 .hero {
 	display: flex;
-	height: 90vh;
+	height: 100%;
 	width: 100vw;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -320,17 +320,18 @@ main h3 {
 .down {
 	display: flex;
 	justify-content: center;
-	align-items: end;
-	position: relative;
+	align-items: center;
+	height: 10%;
 	
+
 }
 
 .up{
 	display: flex;
 	justify-content: center;
-	align-items: end;
+	align-items: center;
 	position: relative;
-	top: 0vh;
+	height: 10%;
 }
 
 
@@ -338,20 +339,20 @@ main h3 {
 .apresentacao {
 	
 	width: 100vw;
-	height: 100vh;
+	
 	
 }
 
 article h1{
 	font-size: 30px;
-	
+	height: 10%;
 }
 
 
   
   .apresentacao article {
 	
-	background-color: rgba(22, 140, 250, 0.582);
+	background-image:url(/Lab5/img/Me.png);
 	height: 100vh;
 	width: 100%;
 	display: flex;
@@ -367,21 +368,10 @@ article h1{
 	padding-left: 12%;
 	padding-right: 12%;
 	width: 100%;
-	height: 65%;
+	height: 60%;
   }
 
  
-  .apresentacao .up {
-	
-	top: 2.5vh;
-
-}
-
-  .apresentacao .down {
-	
-	padding-top: 100px;
-
-}
 
   button {
 	font-size: 18px;
@@ -396,6 +386,7 @@ article h1{
 	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
 	transition-duration: 400ms;
 	transition-property: color;
+	height: 5%;
   }
   
   button:focus,
@@ -438,7 +429,7 @@ article h1{
 
 .pw h1{
 	font-size: 30px;
-	
+	height: 10%;
 }
 
 .pw p{
@@ -451,9 +442,6 @@ article h1{
 	height: 60%;
 }
 
-.pw .down{
-	padding-top: 100px;
-}
 
 .project {
 	height: 100%;
@@ -468,7 +456,7 @@ article h1{
 
 .project h1{
 	font-size: 30px;
-	
+	height: 10%;
 }
 
 .project p{
@@ -481,13 +469,11 @@ article h1{
 	height: 60%;
 }
 
-.project .down{
-	padding-top: 100px;
-}
+
 
 .blog {
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	background-color: rgb(147, 223, 219);
 	display: flex;
 	justify-content: center;
@@ -497,7 +483,7 @@ article h1{
 
 .blog h1{
 	font-size: 30px;
-	
+	height: 10%;
 }
 
 .blog p{
@@ -510,9 +496,7 @@ article h1{
 	height: 60%;
 }
 
-.blog .down{
-	padding-top: 100px;
-}
+
 
 .site {
 	height: 100vh;
@@ -526,7 +510,7 @@ article h1{
 
 .site h1{
 	font-size: 30px;
-	
+	height: 10%;
 }
 
 .site p{
@@ -539,9 +523,6 @@ article h1{
 	height: 60%;
 }
 
-.site .down{
-	padding-top: 100px;
-}
 
 .tool {
 	height: 100vh;
@@ -555,7 +536,7 @@ article h1{
 
 .tool h1{
 	font-size: 30px;
-	
+	height:10%;
 }
 
 .tool p{
@@ -568,14 +549,11 @@ article h1{
 	height: 60%;
 }
 
-.tool .down{
-	padding-top: 100px;
-}
 
 
 .contact {
-	overflow: auto;
-	height: 100vh;
+	
+	height: 100%;
 	width: 100%;
 	background-color: #dbc8c8b4;
 	display: flex;
@@ -585,18 +563,21 @@ article h1{
 }
 
 .contact h1{
-	padding-top: 200px;
+
 	font-size: 30px;
 	text-align: center;
-	
+	height: 5%;
 }
 
-.contact .up{
-	
-	top: 140px;
+
+.form-contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60%;
 }
 
-form { max-width:50%; margin:100px auto; height: 50%;}
+.form-contact form { max-width:80%; }
 
 .feedback-input {
   color:white;
@@ -618,7 +599,7 @@ form { max-width:50%; margin:100px auto; height: 50%;}
 .feedback-input:focus { border:2px solid #CC4949; }
 
 textarea {
-  height: 150px;
+  height: 80%;
   line-height: 150%;
   resize:vertical;
 }
@@ -645,11 +626,11 @@ textarea {
 .footer-basic {
 	display: flex;
 	justify-content: center;
-	padding: 40px 0 20px 0;
+	padding: 20px 0 20px 0;
 	background-color: #ebd6d6b4;
 	color: #4b4c4d;
-	margin-top: auto;
 	width: 100%;
+	height: 20%;
 }
 
 .footer-basic ul {
@@ -678,7 +659,7 @@ textarea {
 
 .footer-basic .social {
 	text-align: center;
-	padding-bottom: 25px;
+	
 }
 
 .footer-basic .social>a {
@@ -701,7 +682,7 @@ textarea {
 
 .footer-basic .copyright {
 
-	margin-top: 15px;
+	margin-top: 10px;
 	text-align: center;
 	font-size: 13px;
 	color: #aaa;
@@ -711,23 +692,16 @@ textarea {
 #footer-logo {
 	display: flex;
 	justify-content: center;
-
-	padding: 10px;
-	height: 3vh;
-
-}
-
-#footer-logo img {
-
-	height: 2vh;
+	height: 1.5vh;
+	padding-top: 5px;
 
 }
+
+
 
 
 @media screen and (max-width: 600px) {
-	body{
-		overflow: scroll;
-	}
+	
 	header {
 		top: 0;
 		flex-direction: row;
@@ -753,9 +727,7 @@ textarea {
 		display: none;
 	}
 
-	.hero {
-		height: 100vh;
-	}
+	
 
 	.name {
 		height: 60%;
@@ -919,121 +891,95 @@ textarea {
 
 
 	.up,.down{
-		display: none;
+		font-size: 12px;
 	}
 
 	.apresentacao h1{
 		
-		font-size: 8vw;
+		font-size: 6vw;
 	}
 
 	.apresentacao p{
-		font-size: 4vw;
+		font-size: 3.5vw;
 	}
 
-	.apresentacao .up{
-		top:5px;
-	}
-
-	.apresentacao .down{
-		bottom:0px;
-	}
-
-	.project .up{
-		top: 10px;
-	}
 	.project h1{
-		margin: 20px;
-		font-size: 8vw;
+	
+		font-size: 6vw;
 	}
 
 	.project p{
-		font-size: 4vw;
+		font-size: 3.5vw;
 	}
 
 	.pw h1{
-		margin: 20px;
-		font-size: 8vw;
+		
+		font-size: 6vw;
 	}
 
 	.pw p{
-		font-size: 4vw;
-	}
-
-	.pw .up{
-		top: 30px;
-	}
-
-	.pw .down{
-		bottom:20px;
+		font-size: 3.5vw;
 	}
 
 	
 	.blog h1{
-		margin: 20px;
-		font-size: 8vw;
+		
+		font-size: 6vw;
 	}
 
 	.blog p{
-		font-size: 4vw;
+		font-size: 3.6vw;
 	}
 
-	.blog .up{
-		top: 30px;
-	}
-
-	.blog .down{
-		bottom:20px;
-	}
 
 	.site h1{
-		margin: 20px;
-		font-size: 8vw;
+		font-size: 6vw;
 	}
 
 	.site p{
-		font-size: 4vw;
+		font-size: 3.5vw;
 	}
 
-	.site .up{
-		top: 10px;
-	}
-
-	.site .down{
-		bottom:0px;
-	}
 
 	.tool h1{
-		margin: 20px;
-		font-size: 8vw;
+		
+		font-size: 6vw;
 	}
 
 	.tool p{
-		font-size: 4vw;
+		font-size:3.5vw;
 	}
 
-	.tool .up{
-		top: 10px;
-	}
 
-	.tool .down{
-		bottom:0px;
-	}
-
-	.contact{
-		overflow: none;
-	}
+	
 
 	.contact h1{
-		margin-top: 20px;
-		font-size: 8vw;
-	}
-
-	.contact .up{
-		top: 240px;
-		padding-bottom: 20px;
+		font-size: 6vw;
 		
 	}
 
+	.form-contact{
+		height: 60%;
+	}
+
+	.footer-basic {
+		
+		height: 30%;
+		padding: 0px;
+	}
+
+	.footer-basic ul {
+		
+		font-size: 15px;
+		
+	}
+
+	#footer-logo {
+		display: flex;
+		justify-content: center;
+		height: 3vh;
+		padding-top: 5px;
+	
+	}
 
 }

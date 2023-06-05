@@ -1,0 +1,26 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block main %}
+
+    <h3>Introdução</h3>
+    <p>Aplicações web criativas por perfeccionistas com deadlines!</p>
+
+    <p>Lista de topicos que falaremos:</p>
+    <ul>
+        {% for topico in topicos %}
+        <li> {{ topico }} </li>
+        {% endfor %}
+    </ul>
+
+    {% load static %}
+    <img src="{% static 'portfolio/images/image.jpg' %}">
+
+    {% if hora > 12 %}
+        Boa tarde,
+    {% else %}
+        Bom dia,
+    {% endif %}
+    estamos em {{ local }}, e são {{ hora }} horas. </p>
+
+
+{% endblock %}
