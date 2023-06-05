@@ -701,6 +701,10 @@ textarea {
 
 
 @media screen and (max-width: 600px) {
+
+	body{
+		overflow: scroll;
+	}
 	
 	header {
 		top: 0;
@@ -891,19 +895,12 @@ textarea {
 
 
 	.up,.down{
+		display: none;
 		font-size: 12px;
 		height: 20%;
 	}
 
-	.up{
-		align-items: end;
-		padding: 0;
-	}
-
-	.down{
-		align-items: start;
-		padding: 0;
-	}
+	
 
 	.hero .name{
 		height: 0%;
@@ -1002,6 +999,10 @@ textarea {
 		height: 3vh;
 		padding-top: 5px;
 	
+	}
+
+	footer{
+		margin-top: 20%;
 	}
 
 }
