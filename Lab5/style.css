@@ -692,7 +692,7 @@ textarea {
 #footer-logo {
 	display: flex;
 	justify-content: center;
-	height: 1.5vh;
+	height: 2vh;
 	padding-top: 5px;
 
 }
@@ -892,11 +892,33 @@ textarea {
 
 	.up,.down{
 		font-size: 12px;
+		height: 20%;
+	}
+
+	.up{
+		align-items: end;
+		padding: 0;
+	}
+
+	.down{
+		align-items: start;
+		padding: 0;
+	}
+
+	.hero .name{
+		height: 0%;
+	}
+
+	.description {
+		height: 10vh;
+		margin: auto;
+	
 	}
 
 	.apresentacao h1{
 		
 		font-size: 6vw;
+		height: 5%;
 	}
 
 	.apresentacao p{
